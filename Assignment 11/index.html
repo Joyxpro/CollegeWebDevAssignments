@@ -1,0 +1,51 @@
+<!-- Design a website using HTML and CSS for the Tourism Sites of a City. Website
+contains:
+• Home page, that leads to other pages. It contains:
+o Heritage
+o Hotel Booking
+o Gallery
+o About
+• Heritage page which contains a list of all the Heritage Sites present in the
+city. There must be at least five heritage sites. Each image entry in the list
+should be a HTML link that leads to a web-page, totally dedicated to the
+heritage site itself. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Journey Beyond – Unveil Hidden Wonders</title>
+  </head>
+  <body>
+    <div class="landingPage">
+      <div class="cover">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./assets/logo.svg" alt="logo" width="150"
+            /></a>
+          </div>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./heritage.html"><li>Heritage Sites</li></a>
+            <a href="./hotelBooking.html"><li>Hotel Booking</li></a>
+            <a href="./aboutUs.html"><li>About Us</li></a>
+            <div class="buttons">
+              <button class="login">Login</button>
+              <button class="signup">Sign Up</button>
+            </div>
+          </ul>
+        </div>
+        <div class="heroSection">
+          <h1>Discover, Explore, Experience - Your Journey Awaits!</h1>
+          <div class="buttons">
+            <a href="./heritage.html"><button class="heritage">Explore Heritages</button></a>
+            <a href="./hotelBooking.html"><button class="hotel">Book Your Hotel Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
