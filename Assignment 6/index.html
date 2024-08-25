@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>portfolio website</title>
+  </head>
+  <body>
+    <img src="./assets/icons/chat.svg" alt="chat icon" id="chat" />
+    <div class="navbar">
+      <div class="navContainer">
+        <div class="logo">
+          <a href="./index.html"><h1>J.</h1></a>
+        </div>
+        <div class="navitems">
+          <ul>
+            <a href="#aboutMe"><li>About Me</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact Information</li></a>
+          </ul>
+        </div>
+        <button class="hireMe">Hire Me</button>
+        <img src="./assets/icons/hamburger.png" alt="hamburger" width="30" id="hamburger">
+      </div>
+    </div>
+
+    <div class="heroSection">
+      <div class="heroLeft">
+        <h3>Hi, I'm</h3>
+        <h1>Jacob Wilson</h1>
+        <h3>and I'm a Web Developer</h3>
+        <p>
+          As a skilled web developer, I craft responsive, user-friendly websites
+          using HTML, CSS, JavaScript, and modern frameworks. My portfolio
+          showcases projects that emphasize clean design, performance, and
+          seamless user experience.
+        </p>
+        <div class="buttonContainer">
+          <button class="downloadCV">Download CV</button>
+          <button class="hireMe">Hire Me</button>
+        </div>
+      </div>
+      <div class="heroRight">
+        <img src="./assets/Mislaneous/profile.png" alt="IMAGE" />
+      </div>
+    </div>
+    <hr />
+
+    <div id="aboutMe">
+      <h2>About Me</h2>
+      <div class="innerAboutMe">
+        <div class="education">
+          <h3>
+            <img
+              src="./assets/icons/education.png"
+              alt="education"
+              width="50"
+            />Education
+          </h3>
+
+          <ul>
+            <li>
+              <img
+                src="./assets/icons/school.png"
+                alt="school image"
+                width="20px"
+                class="edu-icon"
+              />
+              <div class="edu-details">
+                <h4>SCHOOLING</h4>
+                <p>Riverside Academy</p>
+                <span
+                  ><img
+                    src="./assets/icons/calender.png"
+                    alt="calendar"
+                    width="15px"
+                    class="calendar-icon"
+                  />&nbsp;&nbsp;2000-2015</span
+                >
+              </div>
+            </li>
+
+            <li>
+              <img
+                src="./assets/icons/college.png"
+                alt="college"
+                width="20px"
+                class="edu-icon"
+              />
+              <div class="edu-details">
+                <h4>COLLEGE</h4>
+                <p>Brightstone University</p>
+                <span
+                  ><img
+                    src="./assets/icons/calender.png"
+                    alt="calendar"
+                    width="15px"
+                    class="calendar-icon"
+                  />&nbsp;&nbsp;2016-2020</span
+                >
+              </div>
+            </li>
+
+            <li>
+              <img
+                src="./assets/icons/office.png"
+                alt="office"
+                width="20px"
+                class="edu-icon"
+              />
+              <div class="edu-details">
+                <h4>WORK</h4>
+                <p>PixelWave</p>
+                <span
+                  ><img
+                    src="./assets/icons/calender.png"
+                    alt="calendar"
+                    width="15px"
+                    class="calendar-icon"
+                  />&nbsp;&nbsp;2020-2023</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience">
+          <h3>
+            <img
+              src="./assets/icons/experience.png"
+              alt="experience"
+              width="50"
+            />Experience
+          </h3>
+
+          <ul>
+            <li>
+              <h4>Front-End Developer</h4>
+              <p>
+                Worked on designing and implementing responsive and visually
+                appealing front-end features using modern web technologies.
+                Collaborated with design teams to translate mockups into
+                functional web components, enhancing user experience and
+                engagement.
+              </p>
+            </li>
+
+            <li>
+              <h4>Back-End Developer</h4>
+              <p>
+                Focused on building and maintaining server-side logic,
+                databases, and APIs. Ensured data integrity, optimized
+                performance, and integrated various services to support web
+                applications, contributing to robust and scalable solutions.
+              </p>
+            </li>
+
+            <li>
+              <h4>Full-Stack Developer</h4>
+              <p>
+                Managed end-to-end development of web applications, from
+                front-end design to back-end implementation. Collaborated with
+                cross-functional teams to deliver high-quality, scalable
+                solutions that met business requirements and user expectations.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="videoSection">
+        <video src="./assets/Mislaneous/Portfolio Intro Video.mp4" width="600" controls id="video"></video>
+      </div>
+    </div><br><br>
+    <hr />
+
+    <div id="skills">
+      <h2>MY SKILLS</h2>
+      <div class="skillsContainer">
+        <img src="./assets/icons/html.png" alt="html" />
+        <img src="./assets/icons/css.png" alt="css" />
+        <img src="./assets/icons/js.png" alt="javascript" />
+        <img src="./assets/icons/react.png" alt="react" />
+        <img src="./assets/icons/nodeJs.png" alt="node js" />
+        <img src="./assets/icons/nextjs.png" alt="next js" />
+      </div>
+    </div>
+    <hr />
+
+    <div id="projects">
+      <h2>MY PROJECTS</h2>
+      <div class="projectCardSection">
+        <div class="projectCard">
+          <div class="projectImage">
+            <img
+              src="./assets/projects/currency converter.jpeg"
+              alt="currency converter"
+            />
+          </div>
+          <div class="projectDetails">
+            <h3>CURRENCY CONVERTER</h3>
+            <p>
+              This project is a web application that allows users to convert
+              currencies. It uses an API to fetch the exchange rates and display
+              the converted amount.
+            </p>
+            <div class="projectLinks">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectImage">
+            <img src="./assets/projects/quiz app.png" alt="quiz app" />
+          </div>
+          <div class="projectDetails">
+            <h3>QUIZ APP</h3>
+            <p>
+              This project is a web application that allows users to take a
+              quiz. It uses an API to fetch the questions and answers and
+              display the results.
+            </p>
+            <div class="projectLinks">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectImage">
+            <img src="./assets/projects/recipe app.png" alt="recipe app" />
+          </div>
+          <div class="projectDetails">
+            <h3>RECIPE APP</h3>
+            <p>
+              This project is a web application that allows users to search for
+              recipes. It uses an API to fetch the recipes and display the
+              results.
+            </p>
+            <div class="projectLinks">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectImage">
+            <img src="./assets/projects/todoList.png" alt="todo list" />
+          </div>
+          <div class="projectDetails">
+            <h3>TODO LIST</h3>
+            <p>
+              This project is a web application that allows users to create,
+              edit, and delete tasks. It uses an API to fetch the tasks and
+              display them.
+            </p>
+            <div class="projectLinks">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard">
+          <div class="projectImage">
+            <img src="./assets/projects/weather app.jpg" alt="weather app" />
+          </div>
+          <div class="projectDetails">
+            <h3>WEATHER APP</h3>
+            <p>
+              This project is a web application that allows users to search for
+              weather. It uses an API to fetch the weather and display the
+              results.
+            </p>
+            <div class="projectLinks">
+              <a href="#" target="_blank">
+                <img src="./assets/icons/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <hr />
+
+    <div id="contact">
+      <h2>Contact Us</h2>
+      <div class="contactContainer">
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="socialMedia">
+      <a
+        href="https://github.com"
+        target="_blank"
+        class="social-link"
+        title="GitHub"
+      >
+        <img src="./assets/social media icons/github.png" alt="GitHub" />
+      </a>
+      <a
+        href="https://linkedin.com"
+        target="_blank"
+        class="social-link"
+        title="LinkedIn"
+      >
+        <img src="./assets/social media icons/linkedin.png" alt="LinkedIn" />
+      </a>
+      <a
+        href="https://instagram.com"
+        target="_blank"
+        class="social-link"
+        title="Instagram"
+      >
+        <img src="./assets/social media icons/instagram.png" alt="Instagram" />
+      </a>
+      <a
+        href="https://twitter.com"
+        target="_blank"
+        class="social-link"
+        title="Twitter"
+      >
+        <img src="./assets/social media icons/X.png" alt="Twitter" />
+      </a>
+      <a
+        href="https://facebook.com"
+        target="_blank"
+        class="social-link"
+        title="Facebook"
+      >
+        <img src="./assets/social media icons/facebook.png" alt="Facebook" />
+      </a>
+    </div>
+
+    <div id="footer">
+      <p>&copy; 2023. All rights reserved.</p>
+    </div>
+  </body>
+</html>

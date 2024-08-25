@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Science Learning Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Computer Science Learning Survey</h1>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">What is your name?</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="year-group">What year group are you in?</label>
+          <select id="year-group" name="year-group" required>
+            <option value="" disabled selected>Please Select</option>
+            <option value="year-7">Year 7</option>
+            <option value="year-8">Year 8</option>
+            <option value="year-9">Year 9</option>
+            <option value="year-10">Year 10</option>
+            <option value="year-11">Year 11</option>
+          </select>
+        </div>
+
+        <p>
+          Please answer the questions below regarding your experience in
+          Computer Science classes.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Strongly Disagree</th>
+              <th>Disagree</th>
+              <th>Neutral</th>
+              <th>Agree</th>
+              <th>Strongly Agree</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Questions -->
+            <tr>
+              <td>
+                I find the topics covered in Computer Science interesting.
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="q1"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q1" value="disagree" /></td>
+              <td><input type="radio" name="q1" value="neutral" /></td>
+              <td><input type="radio" name="q1" value="agree" /></td>
+              <td><input type="radio" name="q1" value="strongly-agree" /></td>
+            </tr>
+            <tr>
+              <td>The pace of the lessons is appropriate for my learning.</td>
+              <td>
+                <input
+                  type="radio"
+                  name="q2"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q2" value="disagree" /></td>
+              <td><input type="radio" name="q2" value="neutral" /></td>
+              <td><input type="radio" name="q2" value="agree" /></td>
+              <td><input type="radio" name="q2" value="strongly-agree" /></td>
+            </tr>
+            <tr>
+              <td>I feel confident in my ability to code independently.</td>
+              <td>
+                <input
+                  type="radio"
+                  name="q3"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q3" value="disagree" /></td>
+              <td><input type="radio" name="q3" value="neutral" /></td>
+              <td><input type="radio" name="q3" value="agree" /></td>
+              <td><input type="radio" name="q3" value="strongly-agree" /></td>
+            </tr>
+            <tr>
+              <td>My teacher provides helpful feedback on my assignments.</td>
+              <td>
+                <input
+                  type="radio"
+                  name="q4"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q4" value="disagree" /></td>
+              <td><input type="radio" name="q4" value="neutral" /></td>
+              <td><input type="radio" name="q4" value="agree" /></td>
+              <td><input type="radio" name="q4" value="strongly-agree" /></td>
+            </tr>
+            <tr>
+              <td>
+                The learning resources provided are useful and accessible.
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="q5"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q5" value="disagree" /></td>
+              <td><input type="radio" name="q5" value="neutral" /></td>
+              <td><input type="radio" name="q5" value="agree" /></td>
+              <td><input type="radio" name="q5" value="strongly-agree" /></td>
+            </tr>
+            <tr>
+              <td>I enjoy collaborating with classmates on projects.</td>
+              <td>
+                <input
+                  type="radio"
+                  name="q6"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q6" value="disagree" /></td>
+              <td><input type="radio" name="q6" value="neutral" /></td>
+              <td><input type="radio" name="q6" value="agree" /></td>
+              <td><input type="radio" name="q6" value="strongly-agree" /></td>
+            </tr>
+            <tr>
+              <td>
+                The Computer Science class environment is welcoming and
+                supportive.
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="q7"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q7" value="disagree" /></td>
+              <td><input type="radio" name="q7" value="neutral" /></td>
+              <td><input type="radio" name="q7" value="agree" /></td>
+              <td><input type="radio" name="q7" value="strongly-agree" /></td>
+            </tr>
+            <tr>
+              <td>I would recommend Computer Science to other students.</td>
+              <td>
+                <input
+                  type="radio"
+                  name="q8"
+                  value="strongly-disagree"
+                  required
+                />
+              </td>
+              <td><input type="radio" name="q8" value="disagree" /></td>
+              <td><input type="radio" name="q8" value="neutral" /></td>
+              <td><input type="radio" name="q8" value="agree" /></td>
+              <td><input type="radio" name="q8" value="strongly-agree" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

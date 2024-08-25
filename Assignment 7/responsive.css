@@ -1,0 +1,33 @@
+/* Responsive adjustments for the search bar*/
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+  }
+
+  #search {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .search-btn {
+    padding: 0.6rem 1rem;
+  }
+
+  .search-btn img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Responsive adjustments for the auth buttons */
+@media (max-width: 768px) {
+  .auth {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .auth button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}

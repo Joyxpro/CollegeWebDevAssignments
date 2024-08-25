@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marksheet</title>
+    <style>
+      body {
+        background-color: #f5f5dc;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 12px;
+      }
+      table,
+      th,
+      tr,
+      td {
+        border: 2px solid #000;
+        border-collapse: collapse;
+        padding: 6px 50px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      caption {
+        color: rgb(10, 116, 10);
+        font-weight: 900;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 19px;
+      }
+
+      h1,
+      h3 {
+        font-weight: 900;
+        margin: 10px;
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        font-weight: 900;
+      }
+
+      .bold {
+        font-family: "Onest", sans-serif;
+      }
+
+      .blue {
+        background-color: #6b8fed;
+      }
+
+      .ocur {
+        background-color: #BCBA6D;
+      }
+
+      .sky {
+        background-color: #e1ffff;
+      }
+
+      .percentage {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 450px;
+        margin-top: 40px;
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+        font-weight: 800;
+      }
+
+      .status {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Name: John Doe</h1>
+      <h3>Bsc. Computer Science (under CBCS)</h3>
+      <h3>Semester I (Hons)</h3>
+      <table>
+        <caption>
+          Marksheet of John Doe
+        </caption>
+        <tr>
+          <th colspan="4">CU Roll Number : 3223 - 21 - 0045</th>
+        </tr>
+        <tr>
+          <th class="bold blue">Paper</th>
+          <th class="bold blue">Exam Type</th>
+          <th class="bold blue">Full Marksheet</th>
+          <th class="bold blue">Marks Obtained</th>
+        </tr>
+        <td rowspan="4" class="ocur bold">CC-1</td>
+        <td class="ocur bold">Attendence</td>
+        <td class="ocur">10</td>
+        <td class="ocur">9</td>
+        <tr>
+          <td class="ocur bold">Internal Assessment</td>
+          <td class="ocur">10</td>
+          <td class="ocur">10</td>
+        </tr>
+        <tr>
+          <td class="ocur bold">Theory</td>
+          <td class="ocur">50</td>
+          <td class="ocur">48</td>
+        </tr>
+        <tr>
+          <td class="ocur bold">Practical</td>
+          <td class="ocur">30</td>
+          <td class="ocur">29</td>
+        </tr>
+
+        <td rowspan="4" class="sky bold">CC-2</td>
+        <td class="sky bold">Attendence</td>
+        <td class="sky">10</td>
+        <td class="sky">9</td>
+        <tr>
+          <td class="sky bold">Internal Assessment</td>
+          <td class="sky">10</td>
+          <td class="sky">9</td>
+        </tr>
+        <tr>
+          <td class="sky bold">Theory</td>
+          <td class="sky">50</td>
+          <td class="sky">46</td>
+        </tr>
+        <tr>
+          <td class="sky bold">Practical</td>
+          <td class="sky">30</td>
+          <td class="sky">29</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="bold">Total</td>
+          <td class="bold">200</td>
+          <td class="bold">189</td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer">
+      <div class="percentage">
+        <span>Percentage</span>
+        <span>94.5%</span>
+      </div>
+
+      <div class="status">
+        <span style="color: rgb(49, 49, 255); font-weight: bold">Status:</span>
+        <span
+          style="
+            color: red;
+            font-size: 25px;
+            margin-left: 90px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+          "
+          >Qualified to Semester 2</span
+        >
+      </div>
+
+      <p
+        style="
+          margin-top: 40px;
+          color: #d2667c;
+          font-weight: bolder;
+          font-family: sans-serif;
+          font-style: italic;
+        "
+      >
+        Note: This is a computer generated marksheet. Collect your original
+        marksheet from your college
+      </p>
+    </div>
+  </body>
+</html>

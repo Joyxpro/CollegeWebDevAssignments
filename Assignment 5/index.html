@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-container {
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+        padding: 10px;
+      }
+
+      span {
+        display: block;
+        margin: 10px 0px;
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .databox {
+        width: 325px;
+        padding: 10px 5px 10px 5px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: none;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .bigdatabox {
+        width: 660px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: none;
+      }
+
+      .smalldatabox {
+        width: 150px;
+        padding: 10px 5px 10px 5px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: none;
+      }
+
+      legend {
+        font-size: 25px;
+        font-weight: 700;
+      }
+      textarea {
+        resize: none;
+        width: 615px;
+        height: 150px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <span>Student Name</span>
+      <div class="container">
+        <div>
+          <input type="text" placeholder="First Name" class="databox" />
+        </div>
+        <div>
+          <input type="text" placeholder="Last Name" class="databox" />
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <span>Date of Birth</span>
+          <input
+            type="date"
+            max="2030-01-01"
+            min="1900-01-01"
+            class="databox"
+          />
+        </div>
+        <div>
+          <span>Age</span>
+          <input
+            type="number"
+            class="databox"
+            placeholder="Enter your age, ex: 23"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <span>Place of Birth</span>
+          <input type="text " class="databox" />
+        </div>
+        <div>
+          <span>Gender</span>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" />
+        </div>
+      </div>
+      <div class="container">
+        <div>
+          <span>Phone Number</span>
+          <input
+            type="number"
+            class="databox"
+            placeholder="Please enter a valid phone number (000) 000-0000"
+          />
+        </div>
+        <div>
+          <span>Email</span>
+          <input type="email" class="databox" placeholder="email@example.com" />
+        </div>
+      </div>
+      <div>
+        <span>Address</span>
+        <input
+          type="text"
+          class="bigdatabox"
+          placeholder="Street Address"
+        /><br /><br />
+        <input
+          type="text"
+          class="bigdatabox"
+          placeholder="Street Address Line 2"
+        />
+      </div>
+      <br /><br />
+      <div class="container">
+        <div>
+          <input type="text" class="databox" placeholder="City" />
+        </div>
+        <div>
+          <input type="text" class="databox" placeholder="State/Province" />
+        </div>
+      </div>
+      <br /><br />
+      <div>
+        <input type="text" class="bigdatabox" placeholder="Postal / Zip Code" />
+      </div>
+      <div class="container">
+        <div>
+          <span>Grade Level</span>
+          <input type="text" class="databox" />
+        </div>
+        <div>
+          <span>School Year</span>
+          <input type="number" class="databox" />
+        </div>
+      </div>
+      <div>
+        <span>School last attended</span>
+        <input type="text" class="databox" />
+      </div>
+      <br /><br />
+      <div>
+        <span>School Address</span>
+        <input type="text" class="bigdatabox" placeholder="Street Address" />
+      </div>
+      <br /><br />
+      <div>
+        <input
+          type="text"
+          class="bigdatabox"
+          placeholder="Street Address Line 2"
+        />
+      </div>
+      <br /><br />
+      <div class="container">
+        <div>
+          <input type="text" class="databox" placeholder="City" />
+        </div>
+        <div>
+          <input type="text" class="databox" placeholder="State / Province" />
+        </div>
+      </div>
+      <br /><br />
+      <div>
+        <input type="text" class="bigdatabox" placeholder="Postal / Zip Code" />
+      </div>
+      <br /><br />
+      <fieldset>
+        <legend>Parent/Guardian's Information</legend>
+        <span>Parent/Guardian's Name - Primary</span>
+        <div class="container">
+          <div>
+            <input type="text" class="databox" placeholder="First name" />
+          </div>
+          <div>
+            <input type="text" class="databox" placeholder="Last name" />
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <span>Occupation</span>
+            <input type="text" class="databox" />
+          </div>
+          <div>
+            <span>Phone Number</span>
+            <input
+              type="text"
+              class="databox"
+              placeholder="Please enter a valid phone number. (000) 000-0000"
+            />
+          </div>
+        </div>
+        <br />
+        <hr style="height: 0.5px; background-color: rgb(223, 221, 221)" />
+        <br />
+        <span>Parent/Guardian's Name - Secondary</span>
+        <div class="container">
+          <div>
+            <input type="text" class="databox" placeholder="First name" />
+          </div>
+          <div>
+            <input type="text" class="databox" placeholder="Last name" />
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <span>Occupation</span>
+            <input type="text" class="databox" />
+          </div>
+          <div>
+            <span>Phone Number</span>
+            <input
+              type="text"
+              class="databox"
+              placeholder="Please enter a valid phone number. (000) 000-0000"
+            />
+          </div>
+        </div>
+        <br />
+        <p>
+          In case of emergency, who will be notified? Please answer the fields
+          below
+        </p>
+        <hr style="height: 0.5px; background-color: rgb(223, 221, 221)" />
+        <br />
+        <div class="container">
+          <div>
+            <span>Emergency Contact Person</span>
+            <div>
+              <input
+                type="text"
+                class="smalldatabox"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                class="smalldatabox"
+                placeholder="Last Name name"
+              />
+            </div>
+          </div>
+          <div>
+            <span>Emergency Contact Number</span>
+            <input
+              type="number"
+              class="databox"
+              placeholder="Please enter a valid phone number. (000) 000-0000"
+            />
+          </div>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>File Upload</legend>
+        <div>
+          <label for="ID">2x2 Colored ID Picture: </label>
+          <input type="file" name="ID" />
+        </div>
+        <br />
+        <div>
+          <label for="Birth">Birth Certificate: </label>
+          <input type="file" name="Birth" />
+        </div>
+        <br />
+        <div>
+          <label for="School">Report Card of Previous School: </label>
+          <input type="file" name="School" />
+        </div>
+        <br />
+        <div>
+          <label for="moral">Certificate of good moral: </label>
+          <input type="file" name="moral" />
+        </div>
+        <br />
+        <div>
+          <label for="Medial">Medial Clerance Certificate: </label>
+          <input type="file" name="Medial" />
+        </div>
+        <br />
+      </fieldset>
+      <h2>Health History</h2>
+      <div>
+        <label for="allergies"
+          >If the student has any allergies, please list them down below:
+        </label>
+        <br /><br />
+        <textarea name="allergies" id="allergies"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="medications"
+          >Does the student currently taking any medications? If yes please list
+          them down below: </label
+        ><br /><br />
+        <textarea name="medications" id="medications"></textarea>
+      </div>
+      <br /><br />
+      <div>
+        <label for="surgery"
+          >Was the student previously hospitalized or undergo any surgery?
+        </label>
+        <br /><br />
+        <textarea name="surgery" id="surgery"></textarea>
+      </div>
+      <br /><br />
+      <div>
+        <label for="condtion"
+          >Does the student have any medical conditions that you would like to
+          declare?</label
+        ><br /><br />
+        <textarea name="condtion" id="surgery"></textarea>
+      </div>
+    </div>
+  </body>
+</html>
