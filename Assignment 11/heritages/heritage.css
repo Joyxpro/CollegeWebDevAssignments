@@ -1,0 +1,170 @@
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(0, 19, 36);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar ul a li {
+  list-style-type: none;
+}
+
+.navbar .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .buttons button {
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.login {
+  background-color: white;
+  color: rgb(0, 19, 36);
+}
+
+.signup {
+  background-color: rgb(0, 19, 36);
+  color: white;
+  border: 1px solid white;
+}
+
+/* Heritage Site Section */
+.heritage-site {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Image Section */
+.image-container {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: zoomIn 2s ease-in-out;
+}
+
+.image-container img {
+  max-width: 60%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  transform: scale(1.02);
+}
+
+/* Description Section */
+.description {
+  margin-bottom: 30px;
+}
+
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Additional Information */
+.additional-info {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.additional-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.additional-info ul {
+  list-style-type: disc;
+}
+
+.additional-info ul li {
+  color: #000000;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.additional-info ul li {
+  color: #000000;
+  margin-bottom: 10px;
+}
+.additional-info ul li {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

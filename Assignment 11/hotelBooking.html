@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
-    <style>
-      .navbar {
-        background-color: rgb(0, 19, 36);
-      }
-    </style>
+    <link rel="stylesheet" href="hotelBooking.css" />
+    <title>Hotel Booking</title>
   </head>
   <body>
     <div class="navbar">
@@ -29,5 +25,56 @@
         </div>
       </ul>
     </div>
+
+    <!-- Hotel Booking Section -->
+    <section class="hotel-booking">
+      <h1>Find Hotels Based on Your Preferences</h1>
+
+      <!-- Hotel Search Form -->
+      <form class="hotel-search-form">
+        <div class="form-group">
+          <label for="tour-date">Date of Tour:</label>
+          <input type="date" id="tour-date" name="tour-date" />
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Enter a city"
+          />
+        </div>
+        <div class="form-group">
+          <label for="time">Time of Stay:</label>
+          <select id="time" name="time">
+            <option value="morning">Morning Check-in</option>
+            <option value="evening">Evening Check-in</option>
+          </select>
+        </div>
+        <button type="submit" class="search-button">Search Hotels</button>
+      </form>
+
+      <!-- Predefined Hotel Listings -->
+      <div class="hotel-listings">
+        <h2>Available Hotels</h2>
+
+        <!-- Example Hotel Cards -->
+        <div class="hotel-card">
+          <h3>The Leela Ambience Convention Hotel Delhi</h3>
+          <p>
+            Date: August 2024 | Location: New Delhi | Time: Morning Check-in
+          </p>
+          <button class="search-button">Book Now</button>
+        </div>
+        
+        <div class="hotel-card">
+          <h3>Aloft New Delhi Aerocity</h3>
+          <p>
+            Date: August 2024 | Location: Old Delhi | Time: Evening Check-in
+          </p>
+          <button class="search-button">Book Now</button>
+        </div>
+    </section>
   </body>
 </html>

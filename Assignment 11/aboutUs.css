@@ -1,0 +1,132 @@
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(0, 19, 36);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.navbar ul a li {
+  list-style-type: none;
+}
+
+.navbar .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .buttons button {
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.login {
+  background-color: white;
+  color: rgb(0, 19, 36);
+}
+
+.signup {
+  background-color: rgb(0, 19, 36);
+  color: white;
+  border: 1px solid white;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 50px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Introduction, Mission, and Vision Sections */
+.intro,
+.mission,
+.vision {
+  margin-bottom: 30px;
+}
+
+.intro h2,
+.mission h2,
+.vision h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.intro p,
+.mission p,
+.vision p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Team Section */
+.team {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+}

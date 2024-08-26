@@ -3,102 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="heritage.css" />
     <title>Red Fort - Heritage Site</title>
-    <style>
-      /* heritage.css */
-
-      body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-      }
-
-      main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-
-      .heritage-info {
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        padding: 20px;
-        box-sizing: border-box;
-        text-align: center;
-      }
-
-      .heritage-image {
-        width: 100%;
-        overflow: hidden;
-      }
-
-      .heritage-image img { 
-        height: auto;
-        display: block;
-        border-bottom: 2px solid #e0e0e0;
-      }
-
-      .heritage-details {
-        padding: 20px;
-      }
-
-      .heritage-details h1 {
-        font-size: 2.5em;
-        margin: 20px 0;
-        color: #333;
-      }
-
-      .heritage-details p {
-        font-size: 1.1em;
-        line-height: 1.6;
-        color: #555;
-      }
-
-      button.explore-more {
-        background-color: #ff9900;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 1em;
-        cursor: pointer;
-        margin-top: 20px;
-        transition: background-color 0.3s ease;
-      }
-
-      button.explore-more:hover {
-        background-color: #e68a00;
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <section class="heritage-info">
-        <div class="heritage-image">
-          <img src="../assets/redFort.webp" alt="Red Fort" width="200" />
+    <div class="navbar">
+      <div class="logo">
+        <a href="../index.html"><img src="../assets/logo.svg" alt="logo" width="150" /></a>
+      </div>
+      <ul>
+        <a href="./index.html"><li>Home</li></a>
+        <a href="../heritage.html"><li>Heritage Sites</li></a>
+        <a href="../hotelBooking.html"><li>Hotel Booking</li></a>
+        <a href="../aboutUs.html"><li>About Us</li></a>
+        <div class="buttons">
+          <button class="login">Login</button>
+          <button class="signup">Sign Up</button>
         </div>
-        <div class="heritage-details">
-          <h1>Red Fort</h1>
-          <p>
-            The Red Fort, also known as Lal Qila, is a historic fort in Delhi,
-            India, that historically served as the main residence of the Mughal
-            emperors. Emperor Shah Jahan commissioned construction of the Red
-            Fort on 12 May 1639, when he decided to shift his capital from Agra
-            to Delhi.
-          </p>
-          <!-- You can add more details here if needed -->
-          <button class="explore-more">Explore More</button>
-        </div>
-      </section>
-    </main>
+      </ul>
+    </div>
+
+    <!-- Heritage Site Section -->
+    <section class="heritage-site">
+      <div class="header">
+        <h1>Red Fort</h1>
+        <p>Marvel at the majestic fortification of India's Mughal past.</p>
+      </div>
+
+      <!-- Large Image Section -->
+      <div class="image-container">
+        <img src="../assets/redFort.webp" alt="Red Fort" />
+      </div>
+
+      <!-- Description Section -->
+      <div class="description">
+        <h2>About the Site</h2>
+        <p>
+          The Red Fort in Delhi is a historic fortification built by Mughal Emperor
+          Shah Jahan in the 17th century. Known for its massive red sandstone walls,
+          the fort served as the main residence of Mughal emperors for 200 years.
+          It is a UNESCO World Heritage Site and an iconic symbol of India's rich history.
+        </p>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="additional-info">
+        <h2>Things to Know Before You Visit</h2>
+        <ul>
+          <li>Best time to visit: Early morning to avoid the heat and crowds.</li>
+          <li>Nearby attractions: Jama Masjid, Raj Ghat.</li>
+          <li>Don't miss: The evening light and sound show depicting Mughal history.</li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
